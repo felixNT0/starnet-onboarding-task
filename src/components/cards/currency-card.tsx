@@ -41,7 +41,8 @@ const CurrencyCard = ({
           {action}
         </button>
       </div>
-      <div className="flex items-center pb-4">
+      <div className="flex items-center justify-around">
+        <div />
         <input
           type="number"
           value={Number(amount)}
@@ -50,9 +51,9 @@ const CurrencyCard = ({
             appearance: "none",
             MozAppearance: "textfield",
           }}
-          className={`text-3xl font-bold flex-grow text-center ${
+          className={`text-3xl w-full ${
             action === "Send" && "-mr-[60px]"
-          } bg-transparent border-none outline-none !text-white`}
+          } font-bold text-center bg-transparent border-none outline-none !text-white`}
         />
         {action === "Send" && (
           <button className="text-sm bg-[#093822] text-[#00CC6B] py-2 px-4 rounded-[50px]">
