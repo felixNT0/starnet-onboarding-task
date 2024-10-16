@@ -1,9 +1,9 @@
+import BottomTabs from "@/components/bottom-tabs";
+import Loader from "@/components/loader";
+import Modal from "@/components/modal";
+import { useAppContext } from "@/context";
+import Exchange from "@/pages/exchange";
 import { ReactNode, useEffect, useState } from "react";
-import BottomTabs from "../components/bottom-tabs";
-import Loader from "../components/loader";
-import Modal from "../components/modal";
-import { useAppContext } from "../context";
-import Exchange from "../pages/exchange";
 
 interface Props {
   children: ReactNode;

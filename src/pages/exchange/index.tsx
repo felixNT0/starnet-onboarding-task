@@ -1,11 +1,11 @@
+import Button from "@/components/button";
+import CurrencyCard from "@/components/cards";
+import { useAppContext } from "@/context";
 import { motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { CgArrowsExchangeV } from "react-icons/cg";
 import { FaDollarSign, FaEthereum } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
-import Button from "../../components/button";
-import CurrencyCard from "../../components/cards";
-import { useAppContext } from "../../context";
 
 export default function Exchange() {
   // Fetching data from the context
