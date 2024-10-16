@@ -80,7 +80,7 @@ export default function Exchange() {
           <div className="flex flex-col space-y-1">
             <motion.div
               key={`currency-send-${animationKey}`}
-              initial={{ opacity: 0, y: 100 }}
+              initial={animationKey > 0 ? { opacity: 0, y: 100 } : {}}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.5 }}
@@ -99,7 +99,7 @@ export default function Exchange() {
               <div className="absolute inset-0 flex z-10 items-center justify-center">
                 <button
                   onClick={handleExchange}
-                  className="rounded-full p-4 bg-[#36363B]"
+                  className="rounded-full p-4 bg-[#36363B] outline-none"
                 >
                   <CgArrowsExchangeV className="h-7 w-7" />
                 </button>
@@ -108,7 +108,7 @@ export default function Exchange() {
 
             <motion.div
               key={`currency-receive-${animationKey}`}
-              initial={{ opacity: 0, y: -100 }}
+              initial={animationKey > 0 ? { opacity: 0, y: -100 } : {}}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.8 }}

@@ -8,7 +8,7 @@ export default function Button({ children, className, ...props }: ButtonProps) {
       {...props}
       className={`${
         props.disabled ? "cursor-not-allowed opacity-50" : ""
-      } w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-customBorderRadius text-lg font-semibold ${className}`}
+      } w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 outline-none rounded-customBorderRadius text-lg font-semibold ${className}`}
     >
       {children}
     </button>
